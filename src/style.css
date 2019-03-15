@@ -29,7 +29,7 @@ header {
     top: 11px;
 }
 
-ul {
+.ul-without-points {
     list-style-type: none;
 }
 
@@ -38,20 +38,21 @@ body {
     background-color: #e5eaf0;
 }
 
-main {
+.main-block {
     position: absolute;
 }
 
-#search-cross {
-    left: 580px;
+.search-cross {
+    right: -580px;
     position: absolute;
     top: 6px;
     width: 9px;
     height: 9px;
     opacity: 0.15;
+    cursor: pointer;
 }
 
-#all-letters {
+.letters-list {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -60,9 +61,10 @@ main {
     background-color: white;
     top:0;
     left: 0;
+    list-style-type: none;
 }
 
-#search {
+.search {
     font-family: YandexSanThin;
     font-size: 15px;
     padding-left: 16px;
@@ -83,7 +85,6 @@ main {
     margin-left: 0;
     padding-left: 10px;
     text-align: left;
-    vertical-align: middle;
     line-height: 22px;
     width: 137px;
     height: 22px;
@@ -114,7 +115,6 @@ main {
     font-weight: 500;
     color: #ffffff;
     text-align: center;
-    vertical-align: middle;
     line-height: 32px;
     margin-bottom: 8px;
 }
@@ -200,8 +200,6 @@ main {
 
 .sender {
     left: 86px;
-    max-width: 170px;
-    max-height: 16px;
     display: inline;
     position: absolute;
     top: 12px;
@@ -209,12 +207,6 @@ main {
 }
 
 .sender-read {
-    left: 86px;
-    max-width: 170px;
-    max-height: 16px;
-    overflow: hidden;
-    position: absolute;
-    top: 12px;
     font-family: HelveticaNeue-Light;
 }
 
@@ -223,7 +215,7 @@ main {
     width: 10px;
     height: 10px;
     background-color: #6287bd;
-    border-radius: 10px;
+    border-radius: 50%;
     left: 261px;
     display: inline;
     top: 12px;
@@ -231,8 +223,6 @@ main {
 
 .description {
     left: 281px;
-    max-width: 250px;
-    max-height: 16px;
     display: inline;
     position: absolute;
     top: 12px;
@@ -240,12 +230,6 @@ main {
 }
 
 .description-read {
-    left: 281px;
-    max-width: 250px;
-    max-height: 16px;
-    display: inline;
-    position: absolute;
-    top: 12px;
     font-family: HelveticaNeue-Light;
 }
 
@@ -258,7 +242,7 @@ main {
     top: 12px;
 }
 
-#bottom-links {
+.bottom-links {
     width: 345px;
     height: 12px;
     position: absolute;
@@ -315,7 +299,7 @@ footer {
     z-index: 2
 }
 
-#make-norma-choose:checked ~ #all-letters   {
+#make-norma-choose:checked ~ .letters-list   {
     background-color: red;
     z-index: -1000;
 }
